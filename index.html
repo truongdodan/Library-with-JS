@@ -8,6 +8,658 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    
+    <div class="book-adding-form-container">
+        <h2>Add new book</h2>
+        <form id="bookAddingForm">
+            <div class="input-container">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" value="" required>
+            </div>
+            <div class="input-container">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" value="" required>
+            </div>
+            <div class="input-container">
+                <label for="pages">Number of pages</label>
+                <input type="number" name="pages" id="pages" value="" required>
+            </div>
+            <div class="input-container">
+                <p>Have the book been read?</p>
+                <input type="radio" name="have-read" id="have-read" value="1">
+                <label for="have-read">Have read</label>
+                <br>
+                <input type="radio" name="have-read" id="not-read-yet" value="0">
+                <label for="not-read-yet">Not read yet</label>
+            </div>
+            <div class="action-button-container">
+                <input type="reset" value="Clear">
+                <input class="action-button" type="submit" value="Add">
+            </div>
+        </form>
+    </div>
+    <div class="book-table-container">
+        <h1>Book list</h1>
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Pages</th>
+                    <th>Have read?</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ajf</td>
+                    <td>The Lord of The Rings: Two Towers</td>
+                    <td>ksjfj</td>
+                    <td>ksdf</td>
+                    <td>
+                        <button data-book-id="1" class="action-button remove">Remove</button>
+                        <button data-book-id="1" class="mark-read action-button">Mark read</button>
+                    </td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
