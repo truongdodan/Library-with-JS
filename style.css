@@ -46,9 +46,18 @@ body {
 .action-button {
     background-color: hsl(90, 45%, 50%);
     color: white;
-    /* padding: 0.35rem 0.5rem; */
 
     border: none;
+    border-radius: 0.25rem;
+
+    font-size: 1rem;
+    font-weight: 550;
+}
+.change-read-status.action-button {
+    background-color: hsl(90, 45%, 50%);
+    color: white;
+
+    border: 2px hsl(90, 45%, 50%) solid;
     border-radius: 0.25rem;
 
     font-size: 1rem;
@@ -125,6 +134,15 @@ body {
 }
 #bookTable tr:nth-child(even) {
     background-color: #f1f1f1;
+}
+.change-read-status {
+    background-color: hsl(0, 0%, 95%);
+
+    border: 2px hsl(0, 0%, 67%) solid;
+    border-radius: 0.25rem;
+
+    font-size: 1rem;
+    font-weight: 550;
 }
 
 
